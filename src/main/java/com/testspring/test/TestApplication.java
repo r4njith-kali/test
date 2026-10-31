@@ -9,7 +9,14 @@ public class TestApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(TestApplication.class, args);
+		
+		ApplicationContext context = SpringApplication.run(TestApplication.class, args);
+
+		
+// Normal java way
+		develop obj = new develop();
+		obj.build();
+	
 
 
 	}
